@@ -1,4 +1,4 @@
-name: Deploy hello to GitHub Pages
+name: Deploy cron-whisperer to GitHub Pages
 
 on:
   push:
@@ -26,14 +26,14 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm test
-      - name: Build hello (with Pages base path)
+      - name: Build cron-whisperer (with Pages base path)
         env:
           VITE_BASE: /${{ github.event.repository.name }}/
-        run: npm run build -w apps/hello
+        run: npm run build -w apps/cron-whisperer
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: apps/hello/dist
+          path: apps/cron-whisperer/dist
 
   deploy:
     needs: build

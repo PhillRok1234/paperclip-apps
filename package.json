@@ -9,7 +9,7 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "npm run dev -w apps/hello",
+    "dev": "npm run dev -w apps/cron-whisperer",
     "build": "npm run build --workspaces --if-present",
     "test": "npm run test --workspaces --if-present -- --run",
     "lint": "eslint .",
