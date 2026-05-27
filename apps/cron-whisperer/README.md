@@ -1,0 +1,3 @@
+# cron-whisperer
+
+A tiny in-browser converter between plain English (e.g. `every weekday at 9am`) and cron expressions (e.g. `0 9 * * 1,2,3,4,5`), with a live preview of the next 5 fire times. No login, no upload, no backend — everything happens client-side. Built with Vite + React + TypeScript and powered by `cronstrue` (cron → English) and `cron-parser` (next-run calculation). Run it locally with `npm run dev` from the repo root; it ships to GitHub Pages on every push to `main`. Supported English grammar is intentionally bounded — type one of the examples on the page if you're stuck, and we'll tell you when we don't understand instead of guessing.
